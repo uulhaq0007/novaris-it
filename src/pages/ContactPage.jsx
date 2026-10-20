@@ -100,7 +100,7 @@ export default function ContactPage() {
               <Reveal delay={250}>
                 <div className="mt-9 overflow-hidden rounded-2xl">
                   <img
-                    src="/images/about-2.jpg"
+                    src={`${import.meta.env.BASE_URL}images/about-2.jpg`}
                     alt="Team discussing a client brief"
                     className="h-[280px] w-full object-cover"
                     loading="lazy"

@@ -25,7 +25,7 @@ export default function FaqPage() {
               <Reveal delay={250}>
                 <div className="mt-9 overflow-hidden rounded-2xl">
                   <img
-                    src="/images/about-1.jpg"
+                    src={`${import.meta.env.BASE_URL}images/about-1.jpg`}
                     alt="Consultants answering client questions"
                     className="h-[320px] w-full object-cover"
                     loading="lazy"

@@ -28,7 +28,7 @@ export default function About() {
             <div className="relative">
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src="/images/about-1.jpg"
+                  src={`${import.meta.env.BASE_URL}images/about-1.jpg`}
                   alt="Consultants reviewing a delivery roadmap together"
                   className="h-[440px] w-full object-cover transition-transform duration-[1200ms] hover:scale-105 sm:h-[500px]"
                   loading="lazy"
@@ -37,7 +37,7 @@ export default function About() {
 
               <div className="absolute -bottom-10 -right-2 hidden w-[240px] overflow-hidden rounded-2xl border-[8px] border-white shadow-card sm:block lg:-right-8">
                 <img
-                  src="/images/about-2.jpg"
+                  src={`${import.meta.env.BASE_URL}images/about-2.jpg`}
                   alt="Engineering team in a working session"
                   className="h-[210px] w-full object-cover"
                   loading="lazy"

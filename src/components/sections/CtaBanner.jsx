@@ -7,7 +7,7 @@ export default function CtaBanner() {
   return (
     <section className="relative overflow-hidden py-24 lg:py-[120px]">
       <img
-        src="/images/cta-bg.jpg"
+        src={`${import.meta.env.BASE_URL}images/cta-bg.jpg`}
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"

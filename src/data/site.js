@@ -1,3 +1,6 @@
+// Public assets live under the deploy base (e.g. /novaris-it/ on GitHub Pages).
+const BASE = import.meta.env.BASE_URL
+
 export const site = {
   name: 'Novaris',
   tagline: 'IT Solutions & Technology',
@@ -42,14 +45,14 @@ export const navigation = [
 
 export const heroSlides = [
   {
-    image: '/images/hero-1.jpg',
+    image: `${BASE}images/hero-1.jpg`,
     small: 'We have 12 years of experience in IT solutions',
     titleTop: 'Solutions For',
     titleBottom: 'IT Business',
     text: 'From infrastructure to intelligence — we design, secure and scale the technology that moves your business forward.',
   },
   {
-    image: '/images/hero-2.jpg',
+    image: `${BASE}images/hero-2.jpg`,
     small: 'Trusted by 480+ companies across 24 countries',
     titleTop: 'Engineering',
     titleBottom: 'Digital Growth',
@@ -111,21 +114,21 @@ export const counters = [
 ]
 
 export const team = [
-  { name: 'Adrian Vale', role: 'Managing Director', image: '/images/team-1.jpg' },
-  { name: 'Naomi Farrell', role: 'Lead Web Engineer', image: '/images/team-2.jpg' },
-  { name: 'Elliot Marsh', role: 'Security Architect', image: '/images/team-3.jpg' },
-  { name: 'Priya Ramanan', role: 'Product Strategist', image: '/images/team-4.jpg' },
+  { name: 'Adrian Vale', role: 'Managing Director', image: `${BASE}images/team-1.jpg` },
+  { name: 'Naomi Farrell', role: 'Lead Web Engineer', image: `${BASE}images/team-2.jpg` },
+  { name: 'Elliot Marsh', role: 'Security Architect', image: `${BASE}images/team-3.jpg` },
+  { name: 'Priya Ramanan', role: 'Product Strategist', image: `${BASE}images/team-4.jpg` },
 ]
 
 export const caseCategories = ['All', 'Business', 'Consulting', 'Engineering', 'IT Security']
 
 export const caseStudies = [
-  { title: 'Business Knowledge Hub', category: 'Business', image: '/images/case-1.jpg' },
-  { title: 'Relationship Buildup', category: 'Consulting', image: '/images/case-2.jpg' },
-  { title: 'Digital Solutions Rollout', category: 'Engineering', image: '/images/case-3.jpg' },
-  { title: 'Research & Market Plan', category: 'Business', image: '/images/case-4.jpg' },
-  { title: 'Zero Trust Migration', category: 'IT Security', image: '/images/case-5.jpg' },
-  { title: 'UI UX Design Process', category: 'Consulting', image: '/images/case-6.jpg' },
+  { title: 'Business Knowledge Hub', category: 'Business', image: `${BASE}images/case-1.jpg` },
+  { title: 'Relationship Buildup', category: 'Consulting', image: `${BASE}images/case-2.jpg` },
+  { title: 'Digital Solutions Rollout', category: 'Engineering', image: `${BASE}images/case-3.jpg` },
+  { title: 'Research & Market Plan', category: 'Business', image: `${BASE}images/case-4.jpg` },
+  { title: 'Zero Trust Migration', category: 'IT Security', image: `${BASE}images/case-5.jpg` },
+  { title: 'UI UX Design Process', category: 'Consulting', image: `${BASE}images/case-6.jpg` },
 ]
 
 export const pricing = [
@@ -158,21 +161,21 @@ export const testimonials = [
       'Novaris rebuilt our claims platform in under five months. Deployment incidents dropped by 80% and our team finally trusts the release process.',
     name: 'Daniel Okoye',
     role: 'CTO, Meridian Group',
-    avatar: '/images/avatar-1.jpg',
+    avatar: `${BASE}images/avatar-1.jpg`,
   },
   {
     quote:
       'We had tried every popular project management stack and none of it fitted. Their consultants mapped our workflow first, then built around it.',
     name: 'Hanna Lindqvist',
     role: 'Operations Lead, Northbay',
-    avatar: '/images/avatar-2.jpg',
+    avatar: `${BASE}images/avatar-2.jpg`,
   },
   {
     quote:
       'The security audit was blunt, detailed and genuinely useful. Six weeks later we passed SOC 2 with zero major findings. That says everything.',
     name: 'Marcus Reid',
     role: 'Product Manager, Alterra',
-    avatar: '/images/avatar-3.jpg',
+    avatar: `${BASE}images/avatar-3.jpg`,
   },
 ]
 
@@ -183,7 +186,7 @@ export const posts = [
     date: 'March 14, 2026',
     author: 'Adrian Vale',
     category: 'Design',
-    image: '/images/blog-1.jpg',
+    image: `${BASE}images/blog-1.jpg`,
     excerpt:
       'A design system is not a component library. It is a shared agreement about how decisions get made — and that is the part most teams skip.',
   },
@@ -193,7 +196,7 @@ export const posts = [
     date: 'March 02, 2026',
     author: 'Elliot Marsh',
     category: 'Security',
-    image: '/images/blog-2.jpg',
+    image: `${BASE}images/blog-2.jpg`,
     excerpt:
       'Everyone sells zero trust as a product. In reality it is an identity project, a network project and a culture project running in parallel.',
   },
@@ -203,7 +206,7 @@ export const posts = [
     date: 'February 19, 2026',
     author: 'Priya Ramanan',
     category: 'Product',
-    image: '/images/blog-3.jpg',
+    image: `${BASE}images/blog-3.jpg`,
     excerpt:
       'Icons carry meaning only when the surrounding system earns it. Here is the audit we run before adding a single new glyph to a product.',
   },
